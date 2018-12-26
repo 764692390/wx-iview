@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "navigationBarTextStyle": "light",
+  "navigationBarBackgroundColor": "#3385ff",
+  "usingComponents": {
+    "i-panel": "../../dist/panel/index",
+    "i-cell-group": "../../dist/cell-group/index",
+    "i-cell": "../../dist/cell/index"
+  }
+}

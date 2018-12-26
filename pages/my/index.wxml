@@ -1,0 +1,18 @@
+<view class="my-user">
+    <image wx:if="{{userInfo === null}}" src="../images/logo.png" mode="userInfo.avatarUrl"></image> 
+    <image wx:else src="{{userInfo.avatarUrl}}" mode="userInfo.avatarUrl"></image> 
+    <view class="nickName">{{userInfo.nickName}}</view>
+</view>
+ <i-panel>
+    <i-cell-group>
+        <i-cell title="Panel 面板" is-link url="/pages/panel/index"></i-cell>
+        <i-cell title="List 列表" is-link url="/pages/list/index"></i-cell>
+        <i-cell title="Card 卡片" is-link url="/pages/card/index"></i-cell>
+        <i-cell title="ActionSheet 动作面板" is-link url="/pages/action-sheet/index"></i-cell>
+        <i-cell title="Modal 对话框" is-link url="/pages/modal/index"></i-cell>
+        <i-cell title="Message 全局提醒" is-link url="/pages/message/index"></i-cell>
+        <i-cell title="Spin 加载中" is-link url="/pages/spin/index"></i-cell>
+        <i-cell title="Swipeout 滑动菜单" is-link url="/pages/swipeout/index"></i-cell>
+    </i-cell-group>
+</i-panel>
+
