@@ -1,5 +1,5 @@
 <view class="my-user">
-    <image wx:if="{{userInfo === null}}" src="../images/logo.png" mode="userInfo.avatarUrl"></image> 
+    <image wx:if="{{userInfo === null}}" src="https://blog.jczxw.cn/files/default_user.png" mode="userInfo.avatarUrl"></image> 
     <image wx:else src="{{userInfo.avatarUrl}}" mode="userInfo.avatarUrl"></image> 
     <view class="nickName">{{userInfo.nickName}}</view>
 </view>

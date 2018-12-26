@@ -11,12 +11,13 @@ Page({
         });
     },
 
-
-    onShow:function(){
+    onLoad:function(){
+        
        
     },
 
-    onLoad:function(){
+
+    onShow:function(){
         let that = this
         let userInfo = wx.getStorageSync('userInfo')
         console.log(userInfo);
@@ -30,5 +31,7 @@ Page({
             })
         }  
     },
+
+    
      
 });
