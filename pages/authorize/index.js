@@ -134,18 +134,27 @@ Page({
         var that = this;
         // 下面开始调用注册接口
         var userInfo = wx.getStorageSync('userInfo');
-        wx.request({
-            method: "POST",
-            url: app.globalData.subDomain + '/user/register',
-            data: {
-                ...data,
-                ...userInfo
-            }, // 设置请求的 参数
-            success: (res) => {
-                wx.hideLoading();
-                // 回到原来的地方放
-                wx.navigateBack();
+        wx.getSystemInfo({
+            success(res) {
+                console.log(res)
+                console.log(data)
+                let system = { system:JSON.stringify(res) }
+                wx.request({
+                    method: "POST",
+                    url: app.globalData.subDomain + '/user/register',
+                    data: {
+                        ...data,
+                        ...userInfo,
+                        ...system
+                    }, // 设置请求的 参数
+                    success: (res) => {
+                        wx.hideLoading();
+                        // 回到原来的地方放
+                        wx.navigateBack();
+                    }
+                })
             }
-        })
+        })   
+       
     }
 })

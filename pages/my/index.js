@@ -10,6 +10,16 @@ Page({
             current: detail.key
         });
     },
+    signOut() {
+        try {
+            wx.clearStorageSync()
+        } catch (e) {
+            console.log(e)
+        }   
+        wx.navigateTo({
+            url: "/pages/authorize/index"
+        })
+    },
 
     onLoad:function(){
         

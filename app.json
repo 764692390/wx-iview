@@ -40,7 +40,8 @@
     "pages/load-more/index",
     "pages/home-page/index",
     "pages/my/index",
-    "pages/authorize/index"
+    "pages/authorize/index",
+    "pages/log/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FAFAFA",
@@ -67,8 +68,8 @@
     },{ 
     "selectedIconPath": "images/ico/pengyouquan.png",  
     "iconPath": "images/ico/pengyouquan-a.png",    
-    "pagePath": "pages/home-page/index",  
-    "text": "博客"  
+    "pagePath": "pages/log/index",  
+    "text": "日志"  
     },{  
     "selectedIconPath": "images/ico/yonghu.png",  
     "iconPath": "images/ico/yonghu-a.png", 

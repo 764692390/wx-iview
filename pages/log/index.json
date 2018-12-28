@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "登录日志",
+  "navigationBarTextStyle": "light",
+  "navigationBarBackgroundColor": "#3385ff",
+  "enablePullDownRefresh":true,
+  "usingComponents": {
+    "i-card": "../../dist/card/index",
+    "i-icon": "../../dist/icon/index",
+    "i-load-more": "../../dist/load-more/index"
+  }
+}

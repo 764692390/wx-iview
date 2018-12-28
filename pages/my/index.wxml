@@ -1,10 +1,13 @@
 <view class="my-user">
-    <image wx:if="{{userInfo === null}}" src="https://blog.jczxw.cn/files/default_user.png" mode="userInfo.avatarUrl"></image> 
-    <image wx:else src="{{userInfo.avatarUrl}}" mode="userInfo.avatarUrl"></image> 
+    <view class="user-img">
+        <image wx:if="{{userInfo === null}}" src="https://blog.jczxw.cn/files/default_user.png" mode="userInfo.avatarUrl"></image> 
+        <image wx:else src="{{userInfo.avatarUrl}}" mode="userInfo.avatarUrl"></image> 
+    </view>
     <view class="nickName">{{userInfo.nickName}}</view>
 </view>
  <i-panel>
     <i-cell-group>
+        <i-cell title="退出" is-link bindtap="signOut"></i-cell>
         <i-cell title="Panel 面板" is-link url="/pages/panel/index"></i-cell>
         <i-cell title="List 列表" is-link url="/pages/list/index"></i-cell>
         <i-cell title="Card 卡片" is-link url="/pages/card/index"></i-cell>

@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "Icon 图标",
+  "navigationBarTextStyle": "light",
+  "navigationBarBackgroundColor": "#3385ff",
   "usingComponents": {
     "i-icon": "../../dist/icon/index",
     "i-grid": "../../dist/grid/index",

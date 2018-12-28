@@ -1,5 +1,7 @@
 {
-  "navigationBarTitleText": "Iview Ui",
+  "navigationBarTitleText": "首页",
+  "navigationBarTextStyle": "light",
+  "navigationBarBackgroundColor": "#3385ff",
   "usingComponents": {
     "i-panel": "../../dist/panel/index",
     "i-cell-group": "../../dist/cell-group/index",
