@@ -11,6 +11,9 @@ Page({
         loadingMoreHidden: true, // 是否到底
 
     },
+    toDub (str) {
+        return str < 10 ? '0'+str  : str 
+    },
     // 格式化时间
     tsFormatTimer (ts) {
         var dateTime = new Date(ts);
@@ -20,7 +23,7 @@ Page({
         var hour = dateTime.getHours();
         var minute = dateTime.getMinutes();
         var second = dateTime.getSeconds();
-        var timeSpanStr = year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second;
+        var timeSpanStr = year + '-' + this.toDub(month) + '-' + this.toDub(day) + ' ' + this.toDub(hour) + ':' + this.toDub(minute) + ':' + this.toDub(second);
         return timeSpanStr;
     },
     onLoad: function () {

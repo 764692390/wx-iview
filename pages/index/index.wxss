@@ -2,6 +2,7 @@
   .swiper-box{
     position: relative;
     width: 100%;
+    background-color: #3385ff;
   }
   .dots{ 
     position: absolute; 

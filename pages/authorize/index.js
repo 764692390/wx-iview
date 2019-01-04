@@ -6,7 +6,7 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        spinShow: false
     },
 
     /**
@@ -69,6 +69,9 @@ Page({
         if (!e.detail.userInfo) {
             return;
         }
+        this.setData({
+            spinShow: true,
+        })
         wx.setStorageSync('userInfo', e.detail.userInfo)
         this.login();
     },
@@ -94,6 +97,9 @@ Page({
                     } else {
                         // 回到原来的地方放
                         wx.navigateBack();
+                        that.setData({
+                            spinShow: false,
+                        })
                     }
                 }
             })
@@ -151,6 +157,9 @@ Page({
                         wx.hideLoading();
                         // 回到原来的地方放
                         wx.navigateBack();
+                        that.setData({
+                            spinShow: false,
+                        })
                     }
                 })
             }

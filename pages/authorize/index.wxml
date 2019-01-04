@@ -5,4 +5,5 @@
         <view style='width:100%;padding-left:30rpx;font-size: 30rpx;margin-top:30rpx;'>2、同意当前小程序获取我的微信昵称等其他信息；</view>
         <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="save-btn">授权登录</button>
     </form>
+    <i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>
 </view>
