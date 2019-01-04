@@ -2,6 +2,7 @@
   "navigationBarTitleText": "首页",
   "navigationBarTextStyle": "light",
   "navigationBarBackgroundColor": "#3385ff",
+  "enablePullDownRefresh":true,
   "usingComponents": {
     "i-panel": "../../dist/panel/index",
     "i-cell-group": "../../dist/cell-group/index",

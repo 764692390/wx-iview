@@ -1,10 +1,14 @@
 <view style="padding-bottom:16px;">
-    <view style="margin-top:16px" wx:for="{{logList}}" wx:key="{{ item.id}}">
-        <i-card extra="{{item.nickName}}" thumb="{{item.avatarUrl}}" i-class="card-demo">
-            <view slot="content"><i-icon type="clock" size="20" color="#80848f"></i-icon>{{item.createdAt}}</view>
-        </i-card>
+    <view>
+        <view style="margin-top:16px" wx:for="{{logList}}" wx:key="{{ item.id}}">
+            <i-card extra="{{item.nickName}}" thumb="{{item.avatarUrl}}" i-class="card-demo">
+                <view slot="content"><i-icon type="computer" size="20" color="#80848f"></i-icon>手机型号：{{item.system.model}}</view>
+                <view slot="content"><i-icon type="coordinates" size="20" color="#80848f"></i-icon>登录地址：{{item.address}}</view>
+                <view slot="content"><i-icon type="clock" size="20" color="#80848f"></i-icon>登录时间：{{item.createdAt}}</view>
+            </i-card>
+        </view>
     </view>
     <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">
-        <i-load-more tip="暂无数据" loading="{{ false }}" />
+        <i-load-more tip="我是有底线的" loading="{{ false }}" />
     </view>
 </view>

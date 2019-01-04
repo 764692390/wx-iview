@@ -1,6 +1,7 @@
 page {
     width: 100%;
     height: 100%;
+    background: #fff;
 }
 .my-user{
     display: block;
@@ -9,11 +10,13 @@ page {
     background: 
         url(https://blog.jczxw.cn/files/bg_bottom.png) 38% bottom/auto 30% no-repeat, 
         url(https://blog.jczxw.cn/files/bg_left.png) left top/auto 100% no-repeat;
-        /* url(https://blog.jczxw.cn/files/bg_right.png) right top/auto 100% no-repeat,  */
-        /* url(https://blog.jczxw.cn/files/bg.png) center/100% 100% no-repeat; */
+        /* url(https://blog.jczxw.cn/files/bg_right.png) right top/auto 100% no-repeat, 
+        url(https://blog.jczxw.cn/files/bg.png) center/100% 100% no-repeat; */
     background-color: #3385ff;
     text-align: center;
     position: relative;
+    border-radius: 0 0 22px 22px;
+    margin-bottom: 20px;
 }
 .my-user .user-img{
     display: block;
@@ -34,4 +37,7 @@ page {
 }
 .my-user .nickName{
     color: #fff;
+}
+.signOut-btn{
+    padding-top: 20px;
 }

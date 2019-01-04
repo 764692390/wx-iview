@@ -7,4 +7,6 @@ page {
     width: 48px;
     height: 48px;
   }
-  
+  .no-more-goods{
+      padding-top: 20px;
+  }

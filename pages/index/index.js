@@ -56,5 +56,20 @@ Page({
             })
         }  
     },
+     // 上拉加载
+    onReachBottom: function (e) {
+       
+    },
+    // 下拉刷新
+    onPullDownRefresh: function(e){
+        wx.showLoading({
+            title: '加载中...',
+        })
+        var that = this;
+       setTimeout( () => {
+        wx.hideLoading();
+        wx.stopPullDownRefresh();
+       },1500)
+    }
 
 });
