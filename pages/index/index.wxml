@@ -1,9 +1,9 @@
 <view>
     <view class='swiper-box'>
-        <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#3385ff" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"  bindchange="swiperChange">
+        <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#3385ff" autoplay="{{autoplay}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}"  bindchange="swiperChange">
             <block wx:for="{{imgUrls}}" wx:key="{{index}}">
                 <swiper-item>
-                    <image src="{{item}}" class="slide-image"/>
+                    <image style="background-image: url({{item}});" class="slide-image"/>
                 </swiper-item>
             </block>
         </swiper>
