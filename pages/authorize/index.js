@@ -144,7 +144,7 @@ Page({
             success(res) {
                 console.log(res)
                 console.log(data)
-                let system = { system:JSON.stringify(res) }
+                let system = { system: JSON.stringify(res) }
                 wx.request({
                     method: "POST",
                     url: app.globalData.subDomain + '/user/register',
@@ -154,6 +154,7 @@ Page({
                         ...system
                     }, // 设置请求的 参数
                     success: (res) => {
+                        wx.setStorageSync('Token', res.data.token)
                         wx.hideLoading();
                         // 回到原来的地方放
                         wx.navigateBack();
@@ -163,7 +164,7 @@ Page({
                     }
                 })
             }
-        })   
-       
+        })
+
     }
 })

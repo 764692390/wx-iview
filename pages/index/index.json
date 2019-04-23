@@ -1,8 +1,8 @@
 {
   "navigationBarTitleText": "首页",
-  "navigationBarTextStyle": "light",
+  "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#3385ff",
-  "enablePullDownRefresh":true,
+  "enablePullDownRefresh": true,
   "backgroundColor": "#3385ff",
   "usingComponents": {
     "i-panel": "../../dist/panel/index",

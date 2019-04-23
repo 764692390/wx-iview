@@ -1,10 +1,9 @@
 {
   "navigationBarTitleText": "用户信息授权",
-  "navigationBarTextStyle": "light",
+  "navigationBarTextStyle": "white",
   "navigationBarBackgroundColor": "#3385ff",
   "usingComponents": {
     "i-spin": "../../dist/spin/index",
     "i-icon": "../../dist/icon/index"
   }
-
 }

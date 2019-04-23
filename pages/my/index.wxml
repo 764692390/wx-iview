@@ -1,11 +1,12 @@
 <view class="my-user">
     <view class="user-img">
-        <image wx:if="{{userInfo === null}}" src="https://blog.jczxw.cn/files/default_user.png" mode="userInfo.avatarUrl"></image> 
-        <image wx:else src="{{userInfo.avatarUrl}}" mode="userInfo.avatarUrl"></image> 
+        <image wx:if="{{userInfo === null}}" src="https://blog.jczxw.cn/files/default_user.png"
+            mode="userInfo.avatarUrl"></image>
+        <image wx:else src="{{userInfo.avatarUrl}}" mode="userInfo.avatarUrl"></image>
     </view>
     <view class="nickName">{{userInfo.nickName}}</view>
 </view>
- <i-panel>
+<i-panel>
     <i-cell-group>
         <i-cell is-link url="/pages/panel/index">
             <i-icon type="createtask" slot="icon" size="20" color="#e9a327" />
@@ -31,10 +32,12 @@
             <i-icon type="businesscard" slot="icon" size="20" color="#3385ff" />
             关于我们
         </i-cell>
+        <i-cell is-link url="/pages/work/index">
+            <i-icon type="createtask" slot="icon" size="20" color="#e9a327" />
+            面试结果
+        </i-cell>
     </i-cell-group>
 </i-panel>
 <view class="signOut-btn">
     <i-button bind:click="signOut" type="primary" shape="circle" size="small">退出</i-button>
 </view>
-
-

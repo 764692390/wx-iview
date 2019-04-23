@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "面试结果",
+  "usingComponents": {
+    "i-card": "../../dist/card/index",
+    "i-icon": "../../dist/icon/index",
+    "i-load-more": "../../dist/load-more/index",
+    "i-tag": "../../dist/tag/index"
+  }
+}

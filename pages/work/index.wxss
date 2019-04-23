@@ -1,0 +1,16 @@
+page {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto
+}
+.card-demo image {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+.no-more-goods{
+    padding-top: 20px;
+}
+.i-tags{
+  float: right;
+}
